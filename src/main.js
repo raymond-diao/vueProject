@@ -26,7 +26,8 @@ import {
   Switch,
   Tooltip,
   Pagination,
-  Dialog
+  Dialog,
+  MessageBox
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -68,6 +69,7 @@ Vue.use(Dialog)
 
 // message 需要进行全局挂载
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
 
 Vue.config.productionTip = false
 
