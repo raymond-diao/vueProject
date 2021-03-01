@@ -33,7 +33,10 @@ import {
   Tree,
   Select,
   Option,
-  Cascader
+  Cascader,
+  Alert,
+  Tabs,
+  TabPane
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -76,7 +79,10 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
 
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 // message 需要进行全局挂载
 Vue.prototype.$message = Message
@@ -84,7 +90,7 @@ Vue.prototype.$confirm = MessageBox.confirm
 
 Vue.config.productionTip = false
 
-Vue.component('tree-table',TreeTable)
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,
